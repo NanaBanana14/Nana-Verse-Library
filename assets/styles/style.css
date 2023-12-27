@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #F2ECBE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    background-color: #C08261;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 10vh;
+}
+
+header.header-container .logo img {
+    width: 150px;
+    margin-right: auto;
+}
+
+header.header-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem 1rem;
+}
+
+header.header-container .nav-list li {
+    list-style-type: none;
+}
+
+header.header-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.header-container .nav-list .nav:hover a {
+    background-color: #9A3B3B;
+    color: white;
+}
+
+main {
+    width: 100%;
+    margin-inline: auto;
+    padding: 7rem 8rem;
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+
+main .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+main .main-content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 0;
+    background-color: transparent;
+}
+
+main .home-content {
+    display: flex;
+    flex-direction: row;
+}
+
+main .home-content .home img {
+    flex: 1;
+    display: flex;
+}
+
+main .landing .landing-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 550px;
+}
+
+main .home-content .home {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #9A3B3B;
+    margin-top: 20px;
+}
+
+main .home .home-item img {
+    width: 70vh;
+}
+
+main .home .home-item .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+main .home .home-item p {
+    line-height: 1.7rem;
+    font-size: 1.0rem;
+}
+
+main .home .home-item .continue-button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #9A3B3B;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+
+main .home .home-item .continue-button a{
+    color: white;
+}
+
+main .home .home-item .continue-button:hover {
+    background-color: transparent;
+}
+
+main .home .home-item .continue-button a:hover{
+    color: #9A3B3B;
+}
+
+main .main-content .title-menu {
+    margin-top: 20px;
+    color: #9A3B3B;
+    text-align: center;
+}
+
+main .main-content .bookshelf-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .main-content .bookshelf-content .bookshelf {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: white;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container {
+    width: 100%;
+    max-width: 100%;
+    background-color: #E2C799;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item img {
+    margin: auto;
+    min-width: 250px;
+    width: 500px;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item #inputBook {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item #inputBook h2, 
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item #inputBook label, 
+main .main-content .bookshelf-content .bookshelf #searchBook label{
+    font-weight: bold;
+    color: #9A3B3B;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item #inputBook .input{
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item #inputBook input,
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F2ECBE;
+}
+
+main .main-content .bookshelf-content .bookshelf #searchBook input {
+    padding: 5px;
+    border-radius: 5px;
+    width: 600px;
+    background-color: #F2ECBE;
+}
+
+main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item #inputBook button {
+    background-color: #9A3B3B;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-block-start: 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .main-content .bookshelf-content .bookshelf .cari_buku {
+    width: 100%;
+    max-width: 100%;
+    background-color: #E2C799;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+main .main-content .bookshelf-content .bookshelf {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+main .main-content .bookshelf-content .bookshelf #searchBook button{
+    background-color: #9A3B3B;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin-block-start: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: #E2C799;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text], input[type=number], .btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../trash-fill.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    main{
+        margin: 0;
+        width: 100%;
+    }
+    main .main-content .bookshelf-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    main .main-content .bookshelf-content .bookshelf {
+        margin: 0;
+        width: 90%;
+    }
+
+    main .main-content .bookshelf-content .bookshelf .input-buku-container .input-item img {
+        margin: auto;
+        min-width: 250px;
+        width: 300px;
+    }
+
+    main .main-content .bookshelf-content .bookshelf #searchBook input {
+        padding: 5px;
+        border-radius: 5px;
+        width: 200px;
+        background-color: #F2ECBE;
+    }
+
+    .input-buku-container {
+        margin: 0;
+        width: 90%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
+

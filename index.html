@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>NanaVerseLibrary</title>
+
+    <!-- My styles -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- Google font Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <header class="header-container">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li class="nav"><a href="#home">Home</a></li>
+                <li class="nav"><a href="#bookshelf">Bookshelf</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Main Content Start-->
+    <main id="home">
+        <div class="main-content">
+            <div class="home-content" >
+                <article class="home">
+                    <div class="home-item">
+                        <h1 class="title">Nana Verse Library</h1>
+                        <p>Nana Verse Library adalah sebuah tempat untuk menyimpan riwayat buku yang telah kamu baca
+                            maupun sudah selesai dibaca. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                            eos itaque sapiente magni ducimus nostrum sint voluptatibus est necessitatibus impedit
+                            voluptas animi dolore reiciendis, sed labore facilis ullam? Sit, repudiandae.</p>
+                        <p>Mau mencobanya ? Klik tombol <b>Mulai</b> dibawah ini dan rasakan sensasinya</p>
+                        <button class="continue-button"><a href="#bookshelf">Mulai</a></button>
+                    </div>
+                    <div class="home-item">
+                        <img src="assets/img/home.png" alt="Home">
+                    </div>
+                </article>
+            </div>
+            <h1 class="title-menu" id="bookshelf">Bookshelf NanaVerseLibary</h1>
+            <div class="bookshelf-content">
+                <article class="bookshelf">
+                    <section class="input-buku-container">
+                        <div class="input-item">
+                            <form id="inputBook">
+                                <h2>Masukkan Buku Baru</h2>
+                                <div class="input">
+                                    <label for="inputBookTitle">Judul</label>
+                                    <input id="inputBookTitle" type="text" required>
+                                </div>
+                                <div class="input">
+                                    <label for="inputBookAuthor">Penulis</label>
+                                    <input id="inputBookAuthor" type="text" required>
+                                </div>
+                                <div class="input">
+                                    <label for="inputBookYear">Tahun</label>
+                                    <input id="inputBookYear" type="number" required>
+                                </div>
+                                <div class="input_inline">
+                                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                                    <input id="inputBookIsComplete" type="checkbox">
+                                </div>
+                                <button id="bookSubmit" type="submit" value="Submit" name="Submit">Masukkan Buku</span></button>
+                            </form>
+                        </div>
+                        <div class="input-item">
+                            <img src="assets/img/input book.png" alt="Input Buku">
+                        </div>
+                    </section>
+                    <section class="cari_buku">
+                        <h2>Cari Buku</h2>
+                        <form id="searchBook">
+                            <label for="searchBookTitle">Judul</label>
+                            <input id="searchBookTitle" type="text">
+                            <button id="searchSubmit" type="submit">Cari</button>
+                        </form>
+                    </section>
+                    <section class="book_shelf">
+                        <div id="incompleteBookshelfList" class="booklist">
+                            <h2>Buku yang belum selesai dibaca</h2>
+                            <div class="list-item" id="book">
+                            </div>
+                        </div>
+                        <div id="completeBookshelfList" class="bookList">
+                            <h2>Buku yang sudah selesai dibaca</h2>
+                            <div class="list-item" id="completed-book">
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
